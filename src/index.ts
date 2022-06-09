@@ -1,10 +1,2 @@
-
-
-console.log('Hola Mundo!');
-
-
-
-
-
-
+import { fromEvent, map } from "rxjs";
 
