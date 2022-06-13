@@ -1,5 +1,10 @@
 import { Observable, Observer, Subject } from 'rxjs';
 
+// un subject es un observable. La principal diferencia con un observable normal
+// es que el subject es multicast mientras que el Observable es unicast. 
+// Esto quiere decir que cuando alguien se suscriba a un Observable, tendrá su propia ejecución de ese observable,
+// mientras que alguien que se suscriba a un Subject compartirá lo que reciben el resto de suscriptores.
+
 
 // vamos a hacer un suscriptor 
 const observer: Observer<any> = {
